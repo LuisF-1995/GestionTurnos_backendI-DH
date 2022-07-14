@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar turno</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/post_turno.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Inicio</a>
+        <a type="button" class="btn btn-link" href="/logout">Salir</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Turnos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/agregarTurno.html">Agregar turno</a>
+                        <a class="dropdown-item" href="/verTurnos.html">Ver turnos</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-7">
+            <h2>Agregar Turno</h2>
+            <form id="add_new_odontologo">
+
+                <div class="form-group">
+                    <label class="control-label" for="id_odontologo">ID odontologo(*):</label>
+                    <input type="number" class="form-control" id="id_odontologo"
+                    placeholder="Ingrese el ID del odontologo" name="id_odontologo" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="id_paciente">ID paciente(*):</label>
+                    <input type="number" class="form-control" id="id_paciente"
+                           placeholder="Ingrese el ID del paciente" name="id_paciente" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="fecha_turno">Fecha del turno (año-mes-dia) (*):</label>
+                    <input type="text" class="form-control" id="fecha_turno"
+                           placeholder="Ingrese la fecha del turno" name="fecha_turno" required>
+                </div>
+                <button type="submit" class="btn btn-success" id="btn-add-new-odontologo">Crear Turno</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

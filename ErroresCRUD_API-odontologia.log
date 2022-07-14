@@ -1,0 +1,5 @@
+[2022-07-10 11:09:00] [ ERROR] [BadRequestException:9] El paciente con ID 1 no existe, favor crearlo
+[2022-07-10 11:09:16] [ ERROR] [ResourceNotFoundException:9] No se encontró al paciente con id=2 para realizar su eliminación. Error al ingresar el ID
+[2022-07-10 11:09:19] [ ERROR] [ResourceNotFoundException:9] No se encontró al odontólogo con id=3 para realizar su eliminación. Error al ingresar el ID
+[2022-07-10 11:09:46] [ ERROR] [BadRequestException:9] El odontologo con ID 2 no existe, favor crearlo
+[2022-07-11 16:45:45] [ ERROR] [BadRequestException:9] !Error al agregar turno¡ El odontologo con ID 2 no existe, favor crearlo

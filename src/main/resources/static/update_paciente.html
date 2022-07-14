@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Update odontologo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/updatePaciente.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Paciente
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/get_all_odontologo.html">Ver odontologos</a>
+                    <a class="dropdown-item" href="/post_odontologo.html">Agregar odontologos</a>
+                    <a class="dropdown-item" href="/get_all_pacientes.html">Ver Pacientes</a>
+                    <a class="dropdown-item" href="/post_paciente.html">Agregar Pacientes</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-7">
+            <h2>Actualizar Paciente</h2>
+            <form id="update_paciente">
+
+                <div class="form-group">
+                    <label class="control-label" for="id_paciente">ID paciente:</label>
+                    <input type="number" class="form-control" id="id_paciente"
+                           placeholder="Ingrese el ID del paciente" name="id_paciente" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="apellido">Apellido paciente:</label>
+                    <input type="text" class="form-control" id="apellido"
+                           placeholder="Ingrese el apellido del paciente" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="nombre">Nombre paciente:</label>
+                    <input type="text" class="form-control" id="nombre"
+                           placeholder="Ingrese el nombre del paciente" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="email">Email paciente:</label>
+                    <input type="email" class="form-control" id="email"
+                           placeholder="Ingrese la direccion de correo" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="dni">DNI paciente:</label>
+                    <input type="text" class="form-control" id="dni"
+                           placeholder="Ingrese el DNI del paciente" name="dni" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="fecha_ingreso">Fecha ingreso (año-mes-dia):</label>
+                    <input type="text" class="form-control" id="fecha_ingreso"
+                           placeholder="Ingrese la fecha de vinculacion" name="fecha_ingreso" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="control-label" for="calle">Calle domicilio:</label>
+                    <input type="text" class="form-control" id="calle"
+                           placeholder="Ingrese la calle del domicilio" name="calle" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="numero">Numero de calle domicilio:</label>
+                    <input type="text" class="form-control" id="numero"
+                           placeholder="Ingrese el numero de calle" name="numero" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="localidad">Localidad domicilio:</label>
+                    <input type="text" class="form-control" id="localidad"
+                           placeholder="Ingrese la localidad" name="localidad" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="provincia">Provincia domicilio:</label>
+                    <input type="text" class="form-control" id="provincia"
+                           placeholder="Ingrese la provincia" name="provincia" required>
+                </div>
+
+                <button type="submit" class="btn btn-success" id="btn-update-paciente">Actualizar Paciente</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta de odontólogo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/post_odontologo.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Odontólogos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/get_all_odontologo.html">Ver odontologos</a>
+                    <a class="dropdown-item" href="/post_odontologo.html">Agregar odontologos</a>
+                    <a class="dropdown-item" href="/get_all_pacientes.html">Ver Pacientes</a>
+                    <a class="dropdown-item" href="/post_paciente.html">Agregar Pacientes</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-7">
+            <h2>Agregar Odontólogo</h2>
+            <form id="add_new_odontologo">
+                <div class="form-group">
+                    <label class="control-label" for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido"
+                           placeholder="Ingrese el valor del apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre"
+                           placeholder="Ingrese el valor del nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="matricula">Matrícula:</label>
+                    <input type="text" class="form-control" id="matricula"
+                           placeholder="Ingrese el valor de la matrícula" name="matricula" required>
+                </div>
+                <button type="submit" class="btn btn-success" id="btn-add-new-odontologo">Dar de alta</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
